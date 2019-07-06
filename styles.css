@@ -1,11 +1,19 @@
 /* styles */
 
-.main {
-
+#main {
+  min-height: 300px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10% 1fr 10%;
+  grid-template-areas:
+    "header header"
+    "content content"
+    "footer footer";
 }
 
 .header {
-
+ grid-area: header;
 }
 
 #title {
@@ -13,25 +21,34 @@
 }
 
 .timeline {
-
+  grid-area: content;
 }
 
 .timelineEntry {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "image entry"
+    "image entry";
 }
 
-.img {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.imgContainer {
+  grid-area: image;
   text-align: center;
 }
 
 .imgSource {
-  flex: 0 0 100%;
   max-width: 300px;
 }
 
 .caption {
-  flex: 0 0 100%;
+}
+
+.entry {
+  grid-area: entry;
+}
+
+.learnMore {
+  grid-area: footer;
 }
