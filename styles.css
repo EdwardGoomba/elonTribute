@@ -1,0 +1,37 @@
+/* styles */
+
+.main {
+
+}
+
+.header {
+
+}
+
+#title {
+
+}
+
+.timeline {
+
+}
+
+.timelineEntry {
+  display: flex;
+}
+
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.imgSource {
+  flex: 0 0 100%;
+  max-width: 300px;
+}
+
+.caption {
+  flex: 0 0 100%;
+}
